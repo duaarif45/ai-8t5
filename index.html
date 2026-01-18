@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center;">
+    <div class="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDtK8iWZEyk3IeaT2zt2HW-WAZuwwNmSnzDWy9QrPqqaaIX4DIaWGh22h_o5NAtDAta8enmK2ZSLSYzJXC8nGxCWkqedQ2772olgsE3mVhw&s=10"
+          width="400"  alt="">
+    </div>
+    <div class="imgs">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBo4jlOymj1TMv0gAeVpwN9wzGP9P5LU89APV7GIOzJXFmdMg7SfPR6tW3xGYz1l7g9rGymEcuFWdsSbVvxy84uqW6BwkBTIgBrhgEWG2EA&s=10" alt="">
+    </div>
+</div>
+
+<button id="btn1"> show</button>
+<button id="btn2">hide </button>
+<button id="btn3">fadi in</button>
+<button id="btn4">fade out</button>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$.click(function (){
+    $("#image").fadeIn();
+});
+
+</script>
+
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Show Hide Fade</title>
+</head>
+
+<body>
+
+<div style="display: flex; align-items: center;">
+    <div class="img">
+        <img id="image"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDtK8iWZEyk3IeaT2zt2HW-WAZuwwNmSnzDWy9QrPqqaaIX4DIaWGh22h_o5NAtDAta8enmK2ZSLSYzJXC8nGxCWkqedQ2772olgsE3mVhw&s=10"
+             width="400" alt="">
+    </div>
+</div>
+
+<br>
+
+<button id="btn1">Show</button>
+<button id="btn2">Hide</button>
+<button id="btn3">Fade In</button>
+<button id="btn4">Fade Out</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function () {
+
+    $("#btn1").click(function () {
+        $("#image").show();
+    });
+
+    $("#btn2").click(function () {
+        $("#image").hide();
+    });
+
+    $("#btn3").click(function () {
+        $("#image").fadeIn();
+    });
+
+    $("#btn4").click(function () {
+        $("#image").fadeOut();
+    });
+
+});
+</script>
+
+</body>
+</html>
